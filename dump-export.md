@@ -161,7 +161,8 @@ After you answer a question in this section, you will NOT be able to return to i
 Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity.
 Several virtual machines exhibit network connectivity issues.
 You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines.
-Solution: Use Azure Traffic Analytics in Azure Network Watcher to analyze the network traffic.
+
+Solution: Use **Azure Traffic Analytics** in Azure Network Watcher to analyze the network traffic.
 
 **Question:**
 Does this meet the goal?
@@ -171,19 +172,7 @@ Does this meet the goal?
 **Answer:**
 Correct Answer: B
 
-**Explication:**
-Instead use Azure Network Watcher IP Flow Verify, which allows you to detect traffic filtering issues at a VM level.
-Note: IP flow verify checks if a packet is allowed or denied to or from a virtual machine. The information consists of direction, protocol, local IP, remote IP, local port, and remote port. If the packet is denied by a security group, the name of the rule that denied the packet is returned. While any source or destination IP can be chosen, IP flow verify helps administrators quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment.
-
-## Question Set 8
-
-**Context:**
-Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.
-After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.
-Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity.
-Several virtual machines exhibit network connectivity issues.
-You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines.
-Solution: Use Azure Advisor to analyze the network traffic.
+Solution: Use **Azure Advisor** to analyze the network traffic.
 
 **Question:**
 Does this meet the goal?
@@ -193,19 +182,7 @@ Does this meet the goal?
 **Answer:**
 Correct Answer: B
 
-**Explication:**
-Instead use Azure Network Watcher IP Flow Verify, which allows you to detect traffic filtering issues at a VM level.
-Note: IP flow verify checks if a packet is allowed or denied to or from a virtual machine. The information consists of direction, protocol, local IP, remote IP, local port, and remote port. If the packet is denied by a security group, the name of the rule that denied the packet is returned. While any source or destination IP can be chosen, IP flow verify helps administrators quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment.
-
-## Question Set 9
-
-**Context:**
-Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.
-After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.
-Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity.
-Several virtual machines exhibit network connectivity issues.
-You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines.
-Solution: Use Azure Network Watcher to run IP flow verify to analyze the network traffic.
+Solution: Use **Azure Network Watcher** to run IP flow verify to analyze the network traffic.
 
 **Question:**
 Does this meet the goal?
@@ -215,10 +192,31 @@ Does this meet the goal?
 **Answer:**
 Correct Answer: A
 
+Solution: Install and configure the Azure Monitoring agent and the Dependency Agent on all the virtual machines. Use VM insights in Azure Monitor to analyze the network traffic.
+
+**Question:**
+Does this meet the goal?
+- A. Yes
+- B. No
+
+**Answer:**
+Correct Answer: B
+
+
 **Explication:**
-Azure Network Watcher IP Flow Verify allows you to detect traffic filtering issues at a VM level.
+Instead use Azure Network Watcher IP Flow Verify, which allows you to detect traffic filtering issues at a VM level.
+Note: IP flow verify checks if a packet is allowed or denied to or from a virtual machine. The information consists of direction, protocol, local IP, remote IP, local port, and remote port. If the packet is denied by a security group, the name of the rule that denied the packet is returned. While any source or destination IP can be chosen, IP flow verify helps administrators quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment.
+
+
+**Explication:**
+Use the Azure Monitor agent if you need to:
+Collect guest logs and metrics from any machine in Azure, in other clouds, or on-premises.
+Use the Dependency agent if you need to:
+Use the Map feature VM insights or the Service Map solution.
+Note: Instead use Azure Network Watcher IP Flow Verify allows you to detect traffic filtering issues at a VM level.
 IP flow verify checks if a packet is allowed or denied to or from a virtual machine. The information consists of direction, protocol, local IP, remote IP, local port, and remote port. If the packet is denied by a security group, the name of the rule that denied the packet is returned. While any source or destination IP can be chosen,
 IP flow verify helps administrators quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment.
+
 
 ## Question Set 10
 
@@ -314,34 +312,6 @@ Through activity logs, you can determine:
 - when the operation occurred
 - the status of the operation
 - the values of other properties that might help you research the operation
-
-## Question Set 14
-
-**Context:**
-Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.
-After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.
-
-Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity.
-Several virtual machines exhibit network connectivity issues.
-You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines.
-Solution: Install and configure the Azure Monitoring agent and the Dependency Agent on all the virtual machines. Use VM insights in Azure Monitor to analyze the network traffic.
-
-**Question:**
-Does this meet the goal?
-- A. Yes
-- B. No
-
-**Answer:**
-Correct Answer: B
-
-**Explication:**
-Use the Azure Monitor agent if you need to:
-Collect guest logs and metrics from any machine in Azure, in other clouds, or on-premises.
-Use the Dependency agent if you need to:
-Use the Map feature VM insights or the Service Map solution.
-Note: Instead use Azure Network Watcher IP Flow Verify allows you to detect traffic filtering issues at a VM level.
-IP flow verify checks if a packet is allowed or denied to or from a virtual machine. The information consists of direction, protocol, local IP, remote IP, local port, and remote port. If the packet is denied by a security group, the name of the rule that denied the packet is returned. While any source or destination IP can be chosen,
-IP flow verify helps administrators quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment.
 
 ## Question Set 15
 
