@@ -320,6 +320,7 @@ Through activity logs, you can determine:
 **Context:**
 Note: This question is part of a series of questions that present the same scenario. Each question in the series contains a unique solution that might meet the stated goals. Some question sets might have more than one correct solution, while others might not have a correct solution.
 After you answer a question in this section, you will NOT be able to return to it. As a result, these questions will not appear in the review screen.
+
 Your company deploys several virtual machines on-premises and to Azure. ExpressRoute is deployed and configured for on-premises to Azure connectivity.
 Several virtual machines exhibit network connectivity issues.
 You need to analyze the network traffic to identify whether packets are being allowed or denied to the virtual machines.
